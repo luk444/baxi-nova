@@ -121,3 +121,4 @@ OptimizedImage.propTypes = {
 };
 
 export default OptimizedImage;
+
