@@ -90,7 +90,7 @@ function Coverage() {
         sticky
       />
       <MKBox
-        minHeight="55vh"
+        minHeight={{ xs: "70vh", md: "55vh" }}
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
@@ -102,6 +102,7 @@ function Coverage() {
           backgroundPosition: "center",
           display: "grid",
           placeItems: "center",
+          pt: { xs: 8, md: 0 }, // Espacio adicional en mobile para navbar
         }}
       >
         <Container>

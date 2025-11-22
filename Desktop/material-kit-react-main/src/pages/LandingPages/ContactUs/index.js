@@ -36,7 +36,7 @@ function ContactUs() {
         }}
         sticky
       />
-      <MKBox component="section" py={{ xs: 8, lg: 12 }}>
+      <MKBox component="section" py={{ xs: 12, lg: 16 }} pt={{ xs: 10, md: 12 }}>
         <Container maxWidth="lg">
           <MKBox textAlign="center" mb={6}>
             <MKTypography variant="h2" fontWeight="bold" color="dark" mb={2}>

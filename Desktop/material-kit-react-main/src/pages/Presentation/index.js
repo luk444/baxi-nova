@@ -135,11 +135,12 @@ function Presentation() {
                 sx={{
                   display: "flex",
                   flexWrap: "wrap",
-                  gap: 2,
-                  justifyContent: "center",
+                  gap: { xs: 1.5, sm: 2, md: 2.5, lg: 2 },
+                  justifyContent: { xs: "center", lg: "flex-end" },
                   alignItems: "center",
                   height: "100%",
                   pt: 4,
+                  maxWidth: { xs: "100%", lg: "450px" },
                 }}
               >
                 {brands.slice(0, 8).map((brand, index) => (
@@ -149,14 +150,15 @@ function Presentation() {
                     src={brand.logo}
                     alt={brand.name}
                     sx={{
-                      height: { xs: "40px", md: "50px" },
+                      height: { xs: "32px", sm: "38px", md: "44px", lg: "50px" },
                       width: "auto",
-                      maxWidth: "120px",
+                      maxWidth: { xs: "70px", sm: "90px", md: "110px", lg: "120px" },
                       objectFit: "contain",
                       filter: "grayscale(20%)",
                       opacity: 0.8,
                       borderRadius: "9px",
                       transition: "all 0.3s ease",
+                      flexShrink: 0,
                       "&:hover": {
                         filter: "grayscale(0%)",
                         opacity: 1,

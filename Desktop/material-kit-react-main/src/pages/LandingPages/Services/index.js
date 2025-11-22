@@ -71,16 +71,16 @@ function Services() {
         }}
       >
         <Container sx={{ position: "relative", zIndex: 1 }}>
-          <Grid container alignItems="center" sx={{ minHeight: "400px" }}>
-            {/* Logo BAXI - Extremo izquierdo */}
-            <Grid item xs={12} sm={3} md={2} lg={2}>
+          <Grid container alignItems="center" justifyContent="center" sx={{ minHeight: "400px" }}>
+            <Grid item xs={12} md={10} lg={8}>
+              {/* Layout Mobile: Logo arriba, texto abajo */}
               <MKBox
                 sx={{
-                  display: "flex",
-                  justifyContent: { xs: "center", md: "flex-start" },
+                  display: { xs: "flex", md: "none" },
+                  flexDirection: "column",
                   alignItems: "center",
-                  height: "100%",
-                  pl: { xs: 0, md: 4 },
+                  textAlign: "center",
+                  gap: 3,
                 }}
               >
                 <MKBox
@@ -88,73 +88,116 @@ function Services() {
                   src={baxiLogo}
                   alt="BAXI Logo"
                   sx={{
-                    width: { xs: "160px", md: "200px", lg: "240px" },
+                    width: "180px",
                     height: "auto",
                     filter: "brightness(0) invert(1)",
                     opacity: 0.95,
                   }}
                 />
+                <MKBox>
+                  <MKTypography
+                    variant="h1"
+                    color="white"
+                    sx={{
+                      fontSize: "2.5rem",
+                      textShadow: "0 2px 8px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2)",
+                      fontWeight: 700,
+                      letterSpacing: "-0.02em",
+                      mb: 2,
+                    }}
+                  >
+                    Servicios Profesionales
+                  </MKTypography>
+                  <MKTypography
+                    variant="h4"
+                    color="white"
+                    mb={3}
+                    sx={{
+                      textShadow: "0 2px 6px rgba(0, 0, 0, 0.3)",
+                      fontWeight: 600,
+                      opacity: 0.95,
+                    }}
+                  >
+                    Servicio Técnico Oficial BAXI
+                  </MKTypography>
+                  <MKTypography
+                    variant="body1"
+                    color="white"
+                    sx={{
+                      textShadow: "0 1px 4px rgba(0, 0, 0, 0.3)",
+                      fontSize: "1rem",
+                      lineHeight: 1.5,
+                      opacity: 0.95,
+                      maxWidth: "600px",
+                      mx: "auto",
+                    }}
+                  >
+                    Soluciones integrales en calderas, piso radiante, radiadores y sistemas de
+                    calefacción. Más de 15 años de experiencia con garantía oficial del fabricante.
+                  </MKTypography>
+                </MKBox>
               </MKBox>
-            </Grid>
 
-            {/* Espacio vacío grande - Centro para mostrar fondo */}
-            <Grid item xs={12} sm={6} md={7} lg={7} sx={{ display: { xs: "none", sm: "block" } }}>
-              {/* Espacio vacío para mostrar el fondo del banner con personas */}
-            </Grid>
-
-            {/* Texto - Extremo derecho */}
-            <Grid item xs={12} sm={3} md={3} lg={3}>
+              {/* Layout Desktop: Logo izquierda, texto derecha */}
               <MKBox
                 sx={{
-                  textAlign: "right",
-                  pr: { xs: 0, md: 4 },
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
+                  display: { xs: "none", md: "flex" },
+                  alignItems: "center",
+                  gap: 4,
                 }}
               >
-                <MKTypography
-                  variant="h1"
-                  color="white"
-                  sx={({ breakpoints, typography: { size } }) => ({
-                    [breakpoints.down("md")]: {
-                      fontSize: size["3xl"],
-                    },
-                    textShadow: "0 2px 8px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2)",
-                    fontWeight: 700,
-                    letterSpacing: "-0.02em",
-                    mb: 2,
-                  })}
-                >
-                  Servicios Profesionales
-                </MKTypography>
-                <MKTypography
-                  variant="h4"
-                  color="white"
-                  mb={3}
+                <MKBox
+                  component="img"
+                  src={baxiLogo}
+                  alt="BAXI Logo"
                   sx={{
-                    textShadow: "0 2px 6px rgba(0, 0, 0, 0.3)",
-                    fontWeight: 600,
+                    width: "240px",
+                    height: "auto",
+                    filter: "brightness(0) invert(1)",
                     opacity: 0.95,
+                    flexShrink: 0,
                   }}
-                >
-                  Servicio Técnico Oficial BAXI
-                </MKTypography>
-                <MKTypography
-                  variant="body1"
-                  color="white"
-                  sx={{
-                    textShadow: "0 1px 4px rgba(0, 0, 0, 0.3)",
-                    fontSize: { xs: "0.95rem", md: "1rem" },
-                    lineHeight: 1.5,
-                    opacity: 0.95,
-                    maxWidth: { xs: "100%", md: "900px" },
-                  }}
-                >
-                  Soluciones integrales en calderas, piso radiante, radiadores y sistemas de
-                  calefacción. Más de 15 años de experiencia con garantía oficial del fabricante.
-                </MKTypography>
+                />
+                <MKBox sx={{ flex: 1 }}>
+                  <MKTypography
+                    variant="h1"
+                    color="white"
+                    sx={{
+                      textShadow: "0 2px 8px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.2)",
+                      fontWeight: 700,
+                      letterSpacing: "-0.02em",
+                      mb: 2,
+                    }}
+                  >
+                    Servicios Profesionales
+                  </MKTypography>
+                  <MKTypography
+                    variant="h4"
+                    color="white"
+                    mb={3}
+                    sx={{
+                      textShadow: "0 2px 6px rgba(0, 0, 0, 0.3)",
+                      fontWeight: 600,
+                      opacity: 0.95,
+                    }}
+                  >
+                    Servicio Técnico Oficial BAXI
+                  </MKTypography>
+                  <MKTypography
+                    variant="body1"
+                    color="white"
+                    sx={{
+                      textShadow: "0 1px 4px rgba(0, 0, 0, 0.3)",
+                      fontSize: "1rem",
+                      lineHeight: 1.5,
+                      opacity: 0.95,
+                      maxWidth: "500px",
+                    }}
+                  >
+                    Soluciones integrales en calderas, piso radiante, radiadores y sistemas de
+                    calefacción. Más de 15 años de experiencia con garantía oficial del fabricante.
+                  </MKTypography>
+                </MKBox>
               </MKBox>
             </Grid>
           </Grid>
