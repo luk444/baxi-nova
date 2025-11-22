@@ -6,6 +6,13 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Force index.html for all routes (SPA fallback)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = {Role = ["admin"]}
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
