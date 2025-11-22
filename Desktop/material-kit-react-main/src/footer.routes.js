@@ -60,7 +60,7 @@ export default {
       items: [
         { name: "novabaxi@gmail.com", href: "mailto:novabaxi@gmail.com" },
         { name: "+54 9 11 7721 3649", href: "tel:+5491177213649" },
-        { name: "WhatsApp 24/7", href: "https://wa.me/5491177213649" },
+        { name: "Llamar", href: "tel:+5491177213649" },
         { name: "Buenos Aires, Argentina", href: "/cobertura" },
       ],
     },

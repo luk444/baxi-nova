@@ -31,8 +31,8 @@ function AboutUs() {
         routes={routes}
         action={{
           type: "external",
-          route: "https://wa.me/5491177213649",
-          label: "WhatsApp 24/7",
+          route: "tel:+5491177213649",
+          label: "Llamar",
           color: "success",
         }}
         transparent
