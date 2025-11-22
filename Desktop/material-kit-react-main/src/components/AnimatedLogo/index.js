@@ -87,6 +87,7 @@ function AnimatedLogo({ color, size }) {
         alignItems: "center",
         gap: showNova ? 1 : 0,
         transition: "gap 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+        borderRadius: "564px",
       }}
     >
       {/* Logo BAXI - siempre visible */}

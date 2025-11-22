@@ -23,7 +23,6 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 // @mui material components
-import Container from "@mui/material/Container";
 import Icon from "@mui/material/Icon";
 import Popper from "@mui/material/Popper";
 import Grow from "@mui/material/Grow";
@@ -463,11 +462,27 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
     >
       <MKBox
         py={1}
-        px={{ xs: 2, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
-        my={0}
-        mx={0}
-        width="100%"
-        borderRadius={0} // Remove border radius completely
+        px={{
+          xs: 2, // Mobile: padding lateral mínimo
+          sm: transparent ? 2 : 3,
+          lg: transparent ? 0 : 2,
+        }}
+        my={{
+          xs: 0, // Mobile: sin margen vertical
+          lg: relative ? 0 : 2, // Desktop: margen vertical
+        }}
+        mx={{
+          xs: 0, // Mobile: sin margen lateral (full width)
+          lg: relative ? 0 : 3, // Desktop: margen lateral para efecto nube
+        }}
+        width={{
+          xs: "100%", // Mobile: full width
+          lg: relative ? "100%" : "calc(100% - 48px)", // Desktop: con márgenes
+        }}
+        borderRadius={{
+          xs: 0, // Mobile: sin border radius
+          lg: "24px", // Desktop: border radius personalizado para efecto nube
+        }}
         shadow={transparent ? "none" : "md"}
         color={light ? "white" : "dark"}
         position="relative"

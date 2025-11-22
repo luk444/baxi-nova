@@ -35,8 +35,7 @@ function AboutUs() {
           label: "Llamar",
           color: "success",
         }}
-        transparent
-        light
+        sticky
       />
       <MKBox
         minHeight="55vh"

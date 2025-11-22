@@ -60,6 +60,12 @@ function Coverage() {
     "Florida",
     "Boulogne",
     "Villa Adelina",
+    "Escobar",
+    "Pilar",
+    "José C. Paz",
+    "Malvinas Argentinas",
+    "San Miguel",
+    "General San Martín",
   ];
 
   const zonaOeste = [

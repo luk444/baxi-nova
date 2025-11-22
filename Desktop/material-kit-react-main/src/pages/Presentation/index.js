@@ -150,9 +150,9 @@ function Presentation() {
                     src={brand.logo}
                     alt={brand.name}
                     sx={{
-                      height: { xs: "32px", sm: "38px", md: "44px", lg: "50px" },
+                      height: { xs: "40px", sm: "38px", md: "44px", lg: "50px" },
                       width: "auto",
-                      maxWidth: { xs: "70px", sm: "90px", md: "110px", lg: "120px" },
+                      maxWidth: { xs: "85px", sm: "90px", md: "110px", lg: "120px" },
                       objectFit: "contain",
                       filter: "grayscale(20%)",
                       opacity: 0.8,
