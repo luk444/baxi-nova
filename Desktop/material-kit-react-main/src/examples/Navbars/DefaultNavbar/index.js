@@ -453,24 +453,24 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
   );
 
   return (
-    <Container
-      maxWidth={false}
+    <MKBox
       sx={{
         ...(sticky ? { position: "sticky", top: 0, zIndex: 10 } : null),
-        px: { xs: 0, lg: 3 }, // Remove padding on mobile
+        width: "100%",
+        px: 0,
+        mx: 0,
       }}
     >
       <MKBox
         py={1}
         px={{ xs: 2, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
-        my={relative ? 0 : 2}
-        mx={relative ? 0 : 3}
-        width={relative ? "100%" : "calc(100% - 48px)"}
-        borderRadius={{ xs: 0, lg: "xl" }} // Remove border radius on mobile
+        my={0}
+        mx={0}
+        width="100%"
+        borderRadius={0} // Remove border radius completely
         shadow={transparent ? "none" : "md"}
         color={light ? "white" : "dark"}
-        position={relative ? "relative" : "absolute"}
-        left={0}
+        position="relative"
         zIndex={3}
         sx={({ palette: { transparent: transparentColor, white }, functions: { rgba } }) => ({
           backgroundColor: transparent ? transparentColor.main : rgba(white.main, 0.8),
@@ -556,7 +556,7 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
       </MKBox>
       {dropdownMenu}
       {nestedDropdownMenu}
-    </Container>
+    </MKBox>
   );
 }
 

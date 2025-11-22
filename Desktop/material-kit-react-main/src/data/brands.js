@@ -21,24 +21,12 @@ const brands = [
     logo: PeisaLogo,
   },
   {
-    name: "Baxi",
-    logo: BaxiLogo,
-  },
-  {
     name: "Ariston",
     logo: AristonLogo,
   },
   {
-    name: "Baxi",
-    logo: BaxiLogo,
-  },
-  {
     name: "Euterma",
     logo: EutermaLogo,
-  },
-  {
-    name: "Baxi",
-    logo: BaxiLogo,
   },
   {
     name: "Caldaia",

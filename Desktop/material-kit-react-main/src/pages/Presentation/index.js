@@ -143,7 +143,7 @@ function Presentation() {
                   maxWidth: { xs: "100%", lg: "450px" },
                 }}
               >
-                {brands.slice(0, 8).map((brand, index) => (
+                {brands.map((brand, index) => (
                   <MKBox
                     key={index}
                     component="img"
