@@ -19,6 +19,8 @@ import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 
+// Removed CustomMap import
+
 // Routes
 import routes from "routes";
 import footerRoutes from "footer.routes";
@@ -195,19 +197,20 @@ function ContactUs() {
                   py={2}
                   sx={{ backgroundColor: "grey.100" }}
                 >
-                  📍 Zona de Cobertura: CABA, Zona Norte y Zona Oeste
+                  📍 Zona de Cobertura: CABA y Gran Buenos Aires
                 </MKTypography>
 
                 <MKBox
                   component="iframe"
                   title="Mapa de Cobertura BAXI NOVA"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d529894.47490516454!2d-58.69813892858887!3d-34.61566926248802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sar!4v1234567890123!5m2!1ses!2sar"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47490516454!2d-58.59813892858887!3d-34.61566926248802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1234567890123!5m2!1ses!2sar"
                   width="100%"
                   height="100%"
                   sx={{
                     border: 0,
                     flex: 1,
                     minHeight: { xs: "400px", lg: "500px" },
+                    borderRadius: "0 0 lg lg",
                   }}
                   allowFullScreen=""
                   loading="lazy"

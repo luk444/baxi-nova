@@ -39,36 +39,26 @@ Coded by www.creative-tim.com
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// Pages
-import Services from "pages/LandingPages/Services";
-import AboutUs from "pages/LandingPages/AboutUs";
-import Coverage from "pages/LandingPages/Coverage";
-import ContactUs from "pages/LandingPages/ContactUs";
-
 const routes = [
   {
     name: "Servicios",
     icon: <Icon>build</Icon>,
     route: "/servicios",
-    component: <Services />,
   },
   {
     name: "Sobre Nosotros",
     icon: <Icon>people</Icon>,
     route: "/sobre-nosotros",
-    component: <AboutUs />,
   },
   {
     name: "Cobertura",
     icon: <Icon>location_on</Icon>,
     route: "/cobertura",
-    component: <Coverage />,
   },
   {
     name: "Contacto",
     icon: <Icon>phone</Icon>,
     route: "/contacto",
-    component: <ContactUs />,
   },
 ];
 
