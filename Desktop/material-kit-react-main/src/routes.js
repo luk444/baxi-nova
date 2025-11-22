@@ -40,34 +40,34 @@ Coded by www.creative-tim.com
 import Icon from "@mui/material/Icon";
 
 // Pages
-import Services from "layouts/pages/landing-pages/services";
-import AboutUs from "layouts/pages/landing-pages/about-us";
-import Coverage from "layouts/pages/landing-pages/coverage";
-import ContactUs from "layouts/pages/landing-pages/contact-us";
+import Services from "pages/LandingPages/Services";
+import AboutUs from "pages/LandingPages/AboutUs";
+import Coverage from "pages/LandingPages/Coverage";
+import ContactUs from "pages/LandingPages/ContactUs";
 
 const routes = [
   {
     name: "Servicios",
     icon: <Icon>build</Icon>,
-    route: "/pages/landing-pages/services",
+    route: "/servicios",
     component: <Services />,
   },
   {
     name: "Sobre Nosotros",
     icon: <Icon>people</Icon>,
-    route: "/pages/landing-pages/about-us",
+    route: "/sobre-nosotros",
     component: <AboutUs />,
   },
   {
     name: "Cobertura",
     icon: <Icon>location_on</Icon>,
-    route: "/pages/landing-pages/coverage",
+    route: "/cobertura",
     component: <Coverage />,
   },
   {
     name: "Contacto",
     icon: <Icon>phone</Icon>,
-    route: "/pages/landing-pages/contact-us",
+    route: "/contacto",
     component: <ContactUs />,
   },
 ];

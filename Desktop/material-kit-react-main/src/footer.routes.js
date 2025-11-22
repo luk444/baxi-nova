@@ -40,19 +40,19 @@ export default {
     {
       name: "Empresa",
       items: [
-        { name: "Sobre Nosotros", href: "/pages/landing-pages/about-us" },
-        { name: "Servicios", href: "/pages/landing-pages/services" },
-        { name: "Cobertura", href: "/pages/landing-pages/coverage" },
-        { name: "Contacto", href: "/pages/landing-pages/contact-us" },
+        { name: "Sobre Nosotros", href: "/sobre-nosotros" },
+        { name: "Servicios", href: "/servicios" },
+        { name: "Cobertura", href: "/cobertura" },
+        { name: "Contacto", href: "/contacto" },
       ],
     },
     {
       name: "Servicios",
       items: [
-        { name: "Calderas", href: "/pages/landing-pages/services" },
-        { name: "Piso Radiante", href: "/pages/landing-pages/services" },
-        { name: "Radiadores", href: "/pages/landing-pages/services" },
-        { name: "Mantenimiento", href: "/pages/landing-pages/services" },
+        { name: "Calderas", href: "/servicios" },
+        { name: "Piso Radiante", href: "/servicios" },
+        { name: "Radiadores", href: "/servicios" },
+        { name: "Mantenimiento", href: "/servicios" },
       ],
     },
     {
@@ -61,7 +61,7 @@ export default {
         { name: "novabaxi@gmail.com", href: "mailto:novabaxi@gmail.com" },
         { name: "+54 9 11 7721 3649", href: "tel:+5491177213649" },
         { name: "WhatsApp 24/7", href: "https://wa.me/5491177213649" },
-        { name: "Buenos Aires, Argentina", href: "/pages/landing-pages/coverage" },
+        { name: "Buenos Aires, Argentina", href: "/cobertura" },
       ],
     },
   ],

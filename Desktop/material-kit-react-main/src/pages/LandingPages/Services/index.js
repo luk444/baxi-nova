@@ -73,7 +73,7 @@ function Services() {
         <Container sx={{ position: "relative", zIndex: 1 }}>
           <Grid container alignItems="center" sx={{ minHeight: "400px" }}>
             {/* Logo BAXI - Extremo izquierdo */}
-            <Grid item xs={12} md={2} lg={2}>
+            <Grid item xs={12} sm={3} md={2} lg={2}>
               <MKBox
                 sx={{
                   display: "flex",
@@ -98,12 +98,12 @@ function Services() {
             </Grid>
 
             {/* Espacio vacío grande - Centro para mostrar fondo */}
-            <Grid item xs={12} md={7} lg={7} sx={{ display: { xs: "none", md: "block" } }}>
+            <Grid item xs={12} sm={6} md={7} lg={7} sx={{ display: { xs: "none", sm: "block" } }}>
               {/* Espacio vacío para mostrar el fondo del banner con personas */}
             </Grid>
 
             {/* Texto - Extremo derecho */}
-            <Grid item xs={12} md={3} lg={4}>
+            <Grid item xs={12} sm={3} md={3} lg={3}>
               <MKBox
                 sx={{
                   textAlign: "right",
