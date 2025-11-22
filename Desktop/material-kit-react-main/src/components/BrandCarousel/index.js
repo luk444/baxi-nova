@@ -160,8 +160,11 @@ function BrandCarousel({ title, brands, showTitle = true }) {
                       src={brandImage}
                       alt={brandName}
                       loading="lazy"
+                      width="75"
+                      height="50"
                       sx={{
                         height: "105%",
+                        width: "100%",
                         objectFit: "contain",
                         padding: 0,
                         filter: "grayscale(20%)",

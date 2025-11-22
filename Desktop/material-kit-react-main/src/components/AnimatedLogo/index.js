@@ -14,27 +14,23 @@ import { keyframes } from "@mui/system";
 // Images
 import BaxiLogo from "assets/images/LOGO PNG BAXI.png";
 
-// Animación de despliegue mejorada
+// Animación de despliegue mejorada - optimizada para performance
 const slideIn = keyframes`
   0% {
     opacity: 0;
     transform: translateX(-15px) scale(0.8);
-    max-width: 0;
   }
   20% {
     opacity: 1;
     transform: translateX(0) scale(1);
-    max-width: 100px;
   }
   80% {
     opacity: 1;
     transform: translateX(0) scale(1);
-    max-width: 100px;
   }
   100% {
     opacity: 0;
     transform: translateX(-15px) scale(0.8);
-    max-width: 0;
   }
 `;
 
@@ -98,6 +94,8 @@ function AnimatedLogo({ color, size }) {
         component="img"
         src={BaxiLogo}
         alt="BAXI"
+        width="105"
+        height="35"
         sx={{
           height: { xs: "28px", sm: "35px" },
           width: "auto",
@@ -140,8 +138,8 @@ function AnimatedLogo({ color, size }) {
           overflow: "hidden",
           whiteSpace: "nowrap",
           animation: showNova ? `${slideIn} 4s cubic-bezier(0.4, 0, 0.2, 1)` : "none",
-          maxWidth: showNova ? "160px" : "0",
-          transition: "max-width 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease",
+          width: showNova ? "160px" : "0",
+          transition: "width 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease",
         }}
       >
         NOVA

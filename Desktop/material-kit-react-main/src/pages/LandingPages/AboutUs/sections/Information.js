@@ -17,7 +17,7 @@ import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 import CenteredBlogCard from "examples/Cards/BlogCards/CenteredBlogCard";
 
 // Images
-import baxiRepairImage from "assets/images/imagenreparacionbaxi-C4WH1ZTe.webp";
+import baxiRepairImage from "assets/images/imagenreparacionbaxi-optimized.webp";
 
 function Information() {
   return (

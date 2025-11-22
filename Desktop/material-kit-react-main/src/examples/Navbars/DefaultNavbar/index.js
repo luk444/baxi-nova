@@ -453,14 +453,20 @@ function DefaultNavbar({ routes, transparent, light, action, sticky, relative, c
   );
 
   return (
-    <Container sx={sticky ? { position: "sticky", top: 0, zIndex: 10 } : null}>
+    <Container
+      maxWidth={false}
+      sx={{
+        ...(sticky ? { position: "sticky", top: 0, zIndex: 10 } : null),
+        px: { xs: 0, lg: 3 }, // Remove padding on mobile
+      }}
+    >
       <MKBox
         py={1}
-        px={{ xs: 4, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
+        px={{ xs: 2, sm: transparent ? 2 : 3, lg: transparent ? 0 : 2 }}
         my={relative ? 0 : 2}
         mx={relative ? 0 : 3}
         width={relative ? "100%" : "calc(100% - 48px)"}
-        borderRadius="xl"
+        borderRadius={{ xs: 0, lg: "xl" }} // Remove border radius on mobile
         shadow={transparent ? "none" : "md"}
         color={light ? "white" : "dark"}
         position={relative ? "relative" : "absolute"}
